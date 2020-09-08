@@ -26,4 +26,11 @@ $(function() {
     });
 
 
+
+    $('.programms-btns a').click(function() {
+        $('.programms-btns').find('.active').removeClass('active');
+        $(this).addClass('active');
+        $('.programms-box').find('.programms-elem').hide();
+        $('#' + $(this).data('switch')).show();
+    });
 });
