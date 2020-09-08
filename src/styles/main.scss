@@ -883,16 +883,16 @@ select {
    F O R M
 */
 
-.form {
+.form-wrap {
     position: relative;
-    padding: 66px 0 0 0;
+    padding: 66px 0 70px 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 5;
 }
 
-.form::after {
+.form-wrap::after {
     content: '';
     display: block;
     position: absolute;
@@ -915,7 +915,7 @@ select {
 }
 
 .form-box__left {
-    width: 50%;
+    width: 56%;
     .title {
         color: white;
         font-size: 35px;
@@ -943,9 +943,143 @@ select {
     }
 }
 
+.form-box__right {
+    width: 44%;
+    padding: 4px 0 0 0;
+}
+
+.form {
+    padding: 29px 0 40px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 42.6px 17.4px rgba(168, 168, 168, 0.13);
+    .title {
+        color: #212121;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .desc {
+        color: #212121;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: center;
+        margin-bottom: 29px;
+    }
+    span {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    input {
+        display: block;
+        width: 100%;
+        color: #212121;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        padding: 0 19px;
+        height: 42px;
+        background-color: #fffefe;
+        border: 1px solid #212121;
+        border-radius: 10px;
+    }
+    textarea {
+        resize: none;
+        width: 100%;
+        padding: 11px 19px 9px 19px;
+        background-color: #fffefe;
+        border: 1px solid #212121;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        outline: none;
+    }
+    .agree {
+        span {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 19px;
+            color: #212121;
+            text-align: left;
+        }
+    }
+    button {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        padding: 14.5px 0 17.5px 0;
+    }
+    .agree {
+        max-width: 300px;
+        width: 100%;
+        margin: -6px auto 22px auto;
+    }
+    .chechbox-agree input[type=checkbox] {
+        display: none;
+    }
+    .agree label {
+        position: relative;
+        padding: 0 0 0 26px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+        color: #212121;
+        cursor: pointer;
+    }
+    .agree label:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid;
+        border-color: #f57f17;
+        background-color: #fff;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .agree input[type=checkbox]:checked+label:before {
+        content: "";
+        background-color: #f57f17;
+        background-image: url(../img/svg/check.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+    }
+}
+
 
 /*
    F O R M----- E N D 
+*/
+
+
+/*
+   C O N T A C T S 
+*/
+
+.contacts {
+    position: relative;
+    padding: 0 0 0 0;
+    height: 699px;
+}
+
+
+/*
+   C O N T A C T S ----- E N D 
 */
 
 #popup-callback {}
