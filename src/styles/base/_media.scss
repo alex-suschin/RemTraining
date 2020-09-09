@@ -1,0 +1,56 @@
+@media screen and (max-width: 1600px) {
+    .man {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .menu {
+        margin: 0 0 0 0;
+    }
+    .menu li {
+        margin: 0 10px;
+    }
+    .header .btn-white {
+        max-width: 122px;
+        font-size: 12px;
+    }
+    .btn-white::after {
+        width: 126px;
+    }
+    .header .phone {
+        margin: 0 15px 0 0;
+    }
+    .header .phone::before {
+        content: none;
+    }
+    .man {
+        height: 65%;
+    }
+    .top-wrap {
+        padding: 70px 0 70px 0;
+    }
+    .why-our-items {
+        padding: 0 0 0 0;
+    }
+    .stat-item b {
+        font-size: 64px;
+    }
+    .decor1,
+    .decor2 {
+        display: none;
+    }
+    .why-text-item {
+        font-size: 14px;
+    }
+    .programms-btns a {
+        font-size: 16px;
+        padding: 18px 0 18px 0;
+    }
+    .programms-box .btn-yellow {
+        margin-bottom: 30px;
+    }
+    .video-prog {
+        height: 430px;
+    }
+}
