@@ -53,4 +53,38 @@
     .video-prog {
         height: 430px;
     }
+    .skill-item {
+        max-width: initial;
+        width: 47%;
+        padding: 35px;
+        min-height: initial;
+    }
+    .footer-info {
+        width: 37%;
+    }
+    .footer-bottom a {
+        margin-right: 0;
+    }
+    .footer-bottom {
+        justify-content: space-between;
+    }
+    .form-box {
+        flex-direction: column;
+    }
+    .form-box__left {
+        width: 100%;
+    }
+    .form-box__right {
+        width: 100%;
+    }
+    .form-box__left .title {
+        text-align: center;
+    }
+    .form-box__left .desc {
+        text-align: center;
+    }
+    .form-box__left img {
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
 }
