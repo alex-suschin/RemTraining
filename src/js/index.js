@@ -17,6 +17,9 @@ $(function() {
             $('html, body').animate({
                 scrollTop: $(scroll_elem).offset().top - 100
             }, 800);
+            $('#hamburger-icon').removeClass('active');
+            $('.mob-menu').removeClass('active');
+            $('html').removeClass('ov-hidden');
         } else {
             $('html, body').animate({
                 scrollTop: 0
@@ -25,7 +28,16 @@ $(function() {
         return false;
     });
 
-
+    $('#hamburger-icon').click(function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('.mob-menu').addClass('active');
+            $('html').addClass('ov-hidden');
+        } else {
+            $('.mob-menu').removeClass('active');
+            $('html').removeClass('ov-hidden');
+        }
+    });
 
     $('.programms-btns a').click(function() {
         $('.programms-btns').find('.active').removeClass('active');
