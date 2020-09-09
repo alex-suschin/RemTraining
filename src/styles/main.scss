@@ -965,7 +965,7 @@ select {
     padding: 4px 0 0 0;
 }
 
-.form {
+form {
     padding: 29px 0 40px 0;
     background-color: white;
     border-radius: 10px;
@@ -1175,7 +1175,7 @@ select {
         font-size: 15px;
         font-weight: 500;
         line-height: 18px;
-        margin: 8px 16px 0 0;
+        margin: 4px 17px 0 0;
     }
     .phone::before {
         background: url(../img/svg/tel-white.svg) no-repeat center;
@@ -1186,6 +1186,7 @@ select {
     }
     .btn-white {
         border-color: #fff;
+        border: 2px solid white;
         color: #fff;
         background: transparent;
     }
@@ -1199,7 +1200,7 @@ select {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 73px;
+    margin-bottom: 69px;
 }
 
 .footer-info {
@@ -1223,6 +1224,9 @@ select {
         text-decoration: underline;
         margin-right: 187px;
     }
+    a:hover {
+        text-decoration: none;
+    }
     span {
         color: white;
         font-size: 13px;
@@ -1236,13 +1240,44 @@ select {
    F O O T E R ----- E N D 
 */
 
-#popup-callback {}
+
+/*
+   P O P U P
+*/
+
+.modal {
+    form {
+        box-shadow: none;
+        width: 100%;
+        span {
+            display: block;
+            max-width: 342px;
+            width: 100%;
+        }
+        .agree {
+            max-width: 342px;
+            width: 100%;
+            margin: 27px auto 22px auto;
+        }
+        .btn-yellow {
+            padding: 16px 0 16px 0;
+        }
+    }
+    .desc {
+        color: #212121;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 500;
+        line-height: 19px;
+        margin-bottom: 40px;
+    }
+}
 
 .popup__dialog {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 761px;
+    max-width: 550px;
     height: 100vh;
 }
 
@@ -1250,12 +1285,33 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 761px;
+    max-width: 550px;
     width: 100%;
-    padding: 88px 15px 66px 15px;
     background-color: white;
-    border-radius: 2px;
+    padding: 40px 15px 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 42.6px 17.4px rgba(168, 168, 168, 0.13);
     border: none;
+}
+
+#popup-thanks {
+    .popup__title {
+        margin-bottom: 27px;
+    }
+    .btn-yellow {
+        max-width: 342px;
+        margin: 0 auto;
+        color: #f57f17;
+        font-size: 18px;
+        font-weight: 700;
+        background: #fff;
+        border: 2px solid #f9a825;
+        line-height: 18px;
+        padding: 14px 0 14px 0;
+    }
+    .popup__content {
+        padding: 40px 15px 45px 15px;
+    }
 }
 
 .close:not(:disabled):not(.disabled) {
@@ -1264,24 +1320,27 @@ select {
 
 .popup__close {
     position: absolute;
-    right: 18px;
-    top: 14px;
-    font-size: 25px;
-    font-weight: normal;
-    text-shadow: none;
-    cursor: pointer;
+    right: 12px;
+    top: 12px;
+    width: 25px;
+    height: 25px;
+    background: url(../img/svg/close-popup.svg) no-repeat center;
+    background-size: cover;
     transition: all .3s;
     opacity: 1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
 }
 
 .popup__title {
-    margin-bottom: 26px;
-    color: black;
-    text-align: center;
-    font-family: Circe;
-    font-size: 18px;
-    line-height: 1.25;
+    color: #212121;
+    font-size: 25px;
     font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 0;
 }
 
 .ov-hidden {
@@ -1290,70 +1349,32 @@ select {
 
 .form-popup {
     input {
-        display: block;
-        max-width: 216px;
-        padding: 13px 0 13px 0;
-        margin: 0 auto;
-        margin-bottom: 10px;
         width: 100%;
-        color: black;
-        font-family: Circe;
-        font-size: 14px;
-        text-align: center;
-        font-weight: 400;
-        background-color: white;
-        border: 2px solid #c4c4c4;
-        border-radius: 4px;
     }
     .btn-yellow {
-        max-width: 216px;
+        max-width: 342px;
         width: 100%;
         margin: 0 auto;
-        margin-bottom: 30px;
         padding: 15px 0 15px 0;
-        font-size: 14px;
+        color: #fbfbfb;
+        font-size: 18px;
         font-weight: 700;
+        line-height: 18px;
         border: none;
         outline: none;
     }
-    .agree {
-        color: black;
-        font-family: Circe;
-        text-align: center;
-        font-size: 12px;
-        font-weight: 400;
-    }
-}
-
-form span {
-    display: block;
-}
-
-.form-sale span {
-    display: inline-block;
-    margin: 0 8px 0 0;
-    max-width: 292px;
-    width: 100%;
 }
 
 @media (min-width: 576px) {
     .modal-dialog {
         margin: 0 auto;
+        max-width: 550px;
     }
 }
 
-#popup-thanks {
-    .btn-yellow {
-        max-width: 216px;
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        padding: 15px 0 15px 0;
-        font-size: 14px;
-        font-weight: 700;
-        border: none;
-        outline: none;
-    }
-}
+
+/*
+   P O P U P ----- E N D 
+*/
 
 @import "base/media";

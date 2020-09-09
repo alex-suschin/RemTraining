@@ -7,7 +7,7 @@
             </a>
             <div class="footer-info">
                 <a href="tel:88002582545" class="phone">8-800-258-25-45</a>
-                <a href="#" class="btn-white">Заказать звонок</a>
+                <a href="javascript: void(0);" data-toggle="modal" data-target="#popup-callback" class="btn-white">Заказать звонок</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -16,4 +16,40 @@
             </span>
         </div>
     </div>
+
+    <div id="popup-callback" class="modal fade">
+        <div class="modal-dialog popup__dialog" role="document">
+            <div class="modal-content popup__content">
+                <div class="popup__close close" data-dismiss="modal"></div>
+                <div class="popup__title">
+                    Оставьте свои контакты и наш менеджер свяжется с вами
+                </div>
+                <form class="form-popup" method="POST" action="/">
+                    <span><input type="text" placeholder="Ваше имя"></span>
+                    <span><input type="tel" required="required" placeholder="Ваш телефон"></span>
+                    <div class="agree">
+                        <div class="chechbox-agree">
+                            <input type="checkbox" name="agree-popup" id="agree-popup">
+                            <label for="agree-popup">Я даю свое согласие на обработку персональных данных</label>
+                        </div>
+                    </div>
+                    <button class="btn-yellow" type="submit">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-thanks" class="modal fade">
+        <div class="modal-dialog popup__dialog" role="document">
+            <div class="modal-content popup__content">
+                <div class="popup__close close" data-dismiss="modal"></div>
+                <div class="popup__title">
+                    Спасибо за вашу заявку
+                </div>
+                <div class="desc">Наши менеджер свяжется с Вами в<br> ближайшее время</div>
+                <a href="javascript:void(0);" data-dismiss="modal" class="btn-yellow">Вернуться к курсам</a>
+            </div>
+        </div>
+    </div>
+
 </footer>
